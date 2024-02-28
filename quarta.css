@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(tokio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.passagem {
+    background-color: #e083b9;/* Cor de fundo*/
+    border-radius: 10px;/* Define um raio de borda arredondado */
+    padding: 40px;
+    margin: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor da baixa  */
+}
+
+/* Estilo para os campos de entrada de texto e data dentro do formulário */
+.passagem form input[type="text"], .passagem form input[type="date"], .passagem form button {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #080707;/* Adiciona uma borda e define o tamanho e acor da borda ond escreve a origem e os outros */
+    border-radius: 4px;
+    display:block ;/* Faz com que os elementos se comportem como blocos  deixa pequeno a baixa onde esta a passagem*/
+}
+
+.passagem form button {
+   
+    background-color: rgb(230, 0, 153);/* Cor de fundo do botão */
+}
+   
+

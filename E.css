@@ -1,0 +1,113 @@
+body {
+    font-family: Arial;/* Define a fonte do texto */
+    background: #d781e2; /* Define uma cor de fundo da pagina */
+}
+
+h1 {
+    text-align: center;/* Centraliza o texto */
+    padding: 30px;
+}
+
+#destinos {
+    display: flex;
+    justify-content: space-around; /* Distribui os elementos igualmente ao redor do eixo principal */
+
+    margin: 20px;/* Adiciona margem ao redor da div */
+}
+
+
+.destino {
+
+    background: rgb(255, 255, 255);/*a cor de fundo das fotos dos paises*/
+    margin: 10px;
+    padding: 20px;
+    width: calc(25% - 40px);/* Define a largura de cada destino */
+    text-align: center;/*centralizar todo que esta dentro do deestino como foto, textos*/
+}
+
+.destino img {
+    max-width: 100%; /* faz com que a imagem não ultrapasse */
+    height: auto;/* Mantém a proporção da imagem no automatico \ */
+    margin-bottom: 15px;
+}
+
+.destino h2 {
+    margin: 0;
+    color: #070606;/* Cor do texto dos nomes do pais de cada estino */
+}
+
+.destino p {
+    color: #050404; /* Cor do texto do valor*/
+}
+
+
+.petal {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(163, 23, 100);
+    border-radius: 60%;
+    animation: fall 2s linear infinite;
+}
+
+/* Define a animação de queda */
+@keyframes fall {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 0.5;/* Define a opacidade inicial */
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 1;/* Define a opacidade final */
+    }
+}
+
+/* Posicionamento das pétalas com base na ordem se e pra direita ou esqueta definir em qaul,canto da pagin acada petala vai cair */
+.petal:nth-child(1) {
+    top: -40px;
+    left: 50%;
+    animation-delay: 3s; /* Adiciona um atraso na animação */
+}
+
+
+.petal:nth-child(2) {
+    top: -20px;
+    right: 30%;
+    animation-delay: 1s;
+}
+
+.petal:nth-child(3) {
+    top: -20px;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.petal:nth-child(4) {
+    top: -20px;
+    right: 50%;
+    animation-delay: 1.2s;
+}
+
+.petal:nth-child(5) {
+    top: -20px;
+    left: 60%;
+    animation-delay: 2s;
+}
+
+.petal:nth-child(6) {
+    top: -30px;
+    right: 70%;
+    animation-delay: 2s;
+}
+
+.petal:nth-child(7) {
+    top: -20px;
+    left: 70%;
+    animation-delay: 1.5s;
+}
+
+.petal:nth-child(8) {
+    top: -20px;
+    right: 80%;
+    animation-delay: 0s;
+}
